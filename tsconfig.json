@@ -5,7 +5,7 @@
     "module": "esnext",
     "moduleResolution": "node",
     "allowJs": true,
-    "outDir": "transpiled"
+    "outDir": "transpiled",
   },
   "compileOnSave": true,
   "exclude": ["node_modules"],
