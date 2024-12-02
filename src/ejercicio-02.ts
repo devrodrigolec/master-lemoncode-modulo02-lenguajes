@@ -1,6 +1,6 @@
 console.log("************** DELIVERABLE 02 *********************");
 
-const concat = <T1, T2>(a: T1[] = [], b: T2[] = []): (T1 | T2)[] => [
+const concat = <T1, T2>(a: T1[] | null= [], b: T2[] | null = []): (T1 | T2)[] => [
   ...(a ?? []),
   ...(b ?? []),
 ];

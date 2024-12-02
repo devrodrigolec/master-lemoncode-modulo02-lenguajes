@@ -1,15 +1,15 @@
 console.log("************** DELIVERABLE 05 *********************");
 
 class SlotMachine {
-  #coins: number = 0;
+ private coins: number = 0;
 
   createRandomBoolean() {
     return Math.random() > 0.5
   }
 
   userWon() {
-    console.log(`Congratulations!!!. You won ${this.#coins} coins!!!`);
-    this.#coins = 0;
+    console.log(`Congratulations!!!. You won ${this.coins} coins!!!`);
+    this.coins = 0;
   }
 
   userLoose() {
@@ -17,7 +17,7 @@ class SlotMachine {
   }
 
   play() {
-    this.#coins++;
+    this.coins++;
     const slots = [
       this.createRandomBoolean(),
       this.createRandomBoolean(),
